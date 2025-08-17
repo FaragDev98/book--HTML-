@@ -1,94 +1,76 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>تعلم اللغة الإنجليزية - الدرس 1</title>
-<style>
-  body {
-    background-color: #f3e8ff; /* بنفسجي فاتح */
-    font-family: 'Arial', sans-serif;
-    margin: 0; padding: 0;
-    color: #000;
-  }
-  .page {
-    max-width: 800px;
-    margin: 30px auto;
-    background-color: #fff;
-    border: 5px solid #7e3c98; /* بنفسجي غامق */
-    border-radius: 10px;
-    padding: 30px 40px;
-    box-shadow: 0 0 15px rgba(126, 60, 152, 0.4);
-    position: relative;
-  }
-  h1 {
-    color: #ff6f6f; /* أحمر فاتح */
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h2 {
-    color: #ff6f6f;
-    margin-top: 30px;
-  }
-  p {
-    line-height: 1.6;
-    font-size: 18px;
-  }
-  ul {
-    list-style: inside disc;
-    margin: 10px 0 20px 0;
-    padding: 0;
-    font-size: 18px;
-  }
-  .test {
-    background-color: #d9f0d9; /* أخضر فاتح للاختبار */
-    border: 2px solid #4caf50;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 30px;
-    font-size: 18px;
-  }
-  .page-number {
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
-    font-size: 16px;
-    color: #7e3c98;
-    font-weight: bold;
-  }
-</style>
+  <meta charset="UTF-8">
+  <title>بيع كتاب HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f4ff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    img {
+      width: 200px;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .buy-btn {
+      background: #6a11cb;
+      background: linear-gradient(90deg,#6a11cb,#2575fc);
+    }
+    .play-btn img {
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="page">
-  <h1>الدرس 1: الأسماء (Nouns)</h1>
+  <div class="container">
+    <h1>📘 كتاب تعليم HTML للمبتدئين</h1>
+    <p>تعلم أساسيات برمجة المواقع خطوة بخطوة بلغة HTML مع أمثلة عملية.</p>
 
-  <p><strong>مقدمة الدرس:</strong><br />
-  الأسماء هي كلمات تُستخدم لتسمية الأشخاص، الأشياء، الأماكن، أو الأفكار.</p>
+    <!-- صورة الغلاف -->
+    <img src="cover.png" alt="غلاف الكتاب">
 
-  <h2>أنواع الأسماء:</h2>
-  <ul>
-    <li>أسماء عامة: مثل (book, car, city)</li>
-    <li>أسماء خاصة: مثل (Ahmed, Cairo)</li>
-    <li>أسماء معدودة: يمكن عدها (apple, chair)</li>
-    <li>أسماء غير معدودة: لا يمكن عدها (water, rice)</li>
-  </ul>
+    <!-- زر شراء -->
+    <a href="https://wa.me/201091838789?text=عايز+اشتري+كتاب+HTML" class="btn buy-btn">💳 اشترِ الآن</a>
 
-  <h2>أمثلة:</h2>
-  <p>This is a <strong>book</strong>. (هذا كتاب)<br />
-  I live in <strong>Cairo</strong>. (أنا أعيش في القاهرة)</p>
+    <br><br>
 
-  <div class="test">
-    <h2>اختبار صغير:</h2>
-    <p>اختر الإجابة الصحيحة:</p>
-    <ol>
-      <li>The word "school" is a:<br />  
-          a) noun<br />
-          b) verb</li>
-      <li>Is "water" countable or uncountable?<br />  
-          a) countable<br />
-          b) uncountable</li>
-    </ol>
+    <!-- زر تحميل التطبيق -->
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=APP_PACKAGE_NAME" target="_blank">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/ar_badge_web_generic.png" alt="احصل عليه من Google Play">
+    </a>
+
+    <br><br>
+
+    <!-- زر مسنجر -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+    <div class="fb-messengermessageus"
+      messenger_app_id="YOUR_APP_ID"
+      page_id="YOUR_PAGE_ID"
+      color="blue"
+      size="large">
+    </div>
+
   </div>
-
-  <div class="page-number">الصفحة 1</div>
+</body>
+</html>
