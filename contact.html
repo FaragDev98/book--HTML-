@@ -301,7 +301,62 @@
 
 <body>
 
+<div class="hero-section">
+  <div class="overlay">
+    <h1>Stage 1</h1>
+    <p>الدرس الأول – الصفات</p>
+    <button>Start</button>
+  </div>
+</div>
 
+<style>
+.hero-section {
+  width: 100%;
+  height: 100vh; /* يغطي كامل الشاشة */
+  background-image: url('images/cave.jpg'); /* ضع صورتك هنا */
+  background-size: cover; /* تغطية كاملة */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* طبقة سوداء شفافة لتوضيح النص */
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: #fff;
+  color: #000;
+}
+    </style>
   <!-- رأس الصفحة -->
 
   <header>
