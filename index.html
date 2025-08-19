@@ -2,102 +2,106 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>كتاب HTML</title>
-  <!-- ربط ملف CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <title>تعلم HTML</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+    .section {
+      padding: 50px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    .btn-custom {
+      margin: 10px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      padding: 10px 25px;
+    }
+    .text-colored {
+      color: #ffeb3b;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- الهيدر -->
-  <header class="header">
-    <div class="logo">
-      <img src="icons/ai-icon.png" alt="شعار كتاب HTML">
-      <h1>📘 كتاب HTML</h1>
+  <!-- هيدر -->
+  <div class="hero">
+    <h1>سر بناء المواقع يبدأ من هنا: HTML</h1>
+    <p>لغة HTML هي أساس أي موقع على الإنترنت، هي البنية والهيكل اللي بيخلي أي صفحة تشتغل وتظهر قدامك.</p>
+    <div>
+      <a href="#" class="btn btn-light btn-custom">ابدأ الآن</a>
+      <a href="#" class="btn btn-warning btn-custom">تعلم المزيد</a>
+      <a href="#" class="btn btn-success btn-custom">تحميل كتاب</a>
     </div>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="article1.html">المقالات</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-  </header>
+  </div>
 
-  <!-- صورة الكتاب -->
-  <section class="book-intro">
-    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
-    <p class="summary">
-      هل تبحث عن بداية قوية في عالم البرمجة؟ هذا الكتاب هو دليلك الشامل لتعلم HTML بأسلوب بسيط وعملي، مع تطبيقات حقيقية وشرح باللغة العربية.
-    </p>
-  </section>
-
-  <!-- فيديو تعريفي -->
-  <section class="video-section">
-    <h3>🎥 فيديو تعريفي عن الكتاب</h3>
-    <video controls>
-      <source src="videos/book-preview.mp4" type="video/mp4">
-      المتصفح لا يدعم تشغيل الفيديو.
-    </video>
-    <p class="description">
-      يشمل محتوى منسق، صور توضيحية، وتمارين عملية. مناسب للمبتدئين تمامًا.
-    </p>
-  </section>
-
-  <!-- السعر ووسائل الدفع -->
-  <section class="purchase">
-    <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-    <div class="purchase-buttons">
-      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn red">شراء من Gumroad</a>
-      <a href="https://payhip.com/b/2cJWp" class="btn orange">شراء من Payhip</a>
-      <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn green">شراء عبر واتساب</a>
-    </div>
-
-    <p class="note">
-      اختر وسيلة الدفع المناسبة، قم بالدفع وأرسل صورة الإيصال على واتساب، وسوف تستلم رابط التحميل فورًا.
-    </p>
-
-    <div class="payment-methods">
-      <button onclick="copyText('Farajbdallh891@gmail.com')" class="paypal">💳 PayPal - Farajbdallh891@gmail.com</button>
-      <button onclick="copyText('01066047545')" class="vodafone">📱 فودافون كاش - 01066047545</button>
-      <button onclick="copyText('01285895096')" class="orange">📱 أورنج كاش - 01285895096</button>
-      <button onclick="copyText('01558516081')" class="we">📱 وي كاش - 01558516081</button>
-    </div>
-  </section>
-
-  <!-- المختبر البرمجي -->
-  <section class="lab">
-    <img src="images/ain-hero.png" alt="صورة المختبر" class="lab-img" />
-    <h3>🔬 المختبر البرمجي</h3>
-    <div class="tags">
-      <span style="background:#e34c26;">HTML</span>
-      <span style="background:#264de4;">CSS</span>
-      <span style="background:#f0db4f; color:#000;">JavaScript</span>
-      <span style="background:#306998;">Python</span>
-      <span style="background:#8892be;">PHP</span>
-      <span style="background:#00599C;">C++</span>
-      <span style="background:#b07219;">Java</span>
-      <span style="background:#4caf50;">Go</span>
-      <span style="background:#563d7c;">SQL</span>
-      <span style="background:#008080;">Ruby</span>
-    </div>
+  <!-- قسم 1 -->
+  <div class="section">
+    <h2 class="text-colored">ما هي HTML؟</h2>
     <p>
-      خُض تجربة تفاعلية ملهمة لتعلم البرمجة <strong>مباشرة من المتصفح!</strong><br>
-      <strong>المختبر البرمجي</strong> هو بيئة عملية جاهزة تدعم أكثر من <strong>10 لغات برمجة</strong> لتجربة الكود وتنفيذ الأفكار بسرعة وسهولة.
+      HTML اختصار لـ <strong>HyperText Markup Language</strong>، وهي اللغة الأساسية اللي بنبني بيها أي صفحة ويب. 
+      تقدر تعتبرها "الطوبة الأولى" أو "الهيكل العظمي" لأي موقع.  
+      من غير HTML ما ينفعش يكون في عناوين، فقرات، صور أو حتى روابط.
     </p>
-  </section>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+  </div>
 
-  <!-- روابط التواصل -->
-  <footer>
-    <div class="social">
-      <a href="https://github.com/FaragDev98" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
-      <a href="https://www.youtube.com/@Fabrica-courses" target="_blank"><img src="icons/youtube.png" alt="YouTube"></a>
-      <a href="https://www.facebook.com/share/15SjvL75fF/" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
-      <a href="https://www.linkedin.com/in/factory-course-43a655358" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/frjbdllh25" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
-      <a href="https://wa.me/201066047545" target="_blank"><img src="icons/i-icon.png" alt="WhatsApp"></a>
-    </div>
-    <p>© 2025 - Fabrica Courses</p>
+  <!-- قسم 2 -->
+  <div class="section">
+    <h2 class="text-colored">أهمية HTML في تطوير الويب</h2>
+    <p>
+      لو تخيلنا الإنترنت كمدينة كبيرة، فإن HTML هي الخرائط والشوارع اللي بتحدد كل مكان.  
+      هي اللي بتقول للمتصفح: "هنا عنوان رئيسي، هنا فقرة، هنا صورة، هنا فيديو".  
+      وبفضلها تقدر باقي اللغات زي CSS وJavaScript تدخل وتضيف ألوان وحركة وتفاعلات.
+    </p>
+    <p>
+      مثال بسيط: كود HTML ممكن يحتوي على عنوان وفيديو وصورة.  
+      بدونها الصفحة هتكون مجرد خلفية فاضية.
+    </p>
+  </div>
+
+  <!-- قسم 3 -->
+  <div class="section">
+    <h2 class="text-colored">مميزات HTML</h2>
+    <ul>
+      <li>سهلة التعلم لأي مبتدئ.</li>
+      <li>مفتوحة المصدر ومجانية.</li>
+      <li>تدعم جميع المتصفحات.</li>
+      <li>تعتبر القاعدة اللي فوقها بيتبني CSS وJavaScript.</li>
+      <li>مرنة وتشتغل مع أي نوع محتوى (نصوص، صور، فيديوهات).</li>
+    </ul>
+    <a href="#" class="btn btn-primary btn-custom">جرب كود HTML</a>
+  </div>
+
+  <!-- فوتر -->
+  <footer class="text-center p-4" style="background: rgba(0,0,0,0.6);">
+    <p>جميع الحقوق محفوظة &copy; 2025 - تعلم HTML خطوة بخطوة</p>
   </footer>
 
-  <script src="security.js"></script>
 </body>
 </html>
