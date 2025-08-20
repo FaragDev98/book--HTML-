@@ -18,3 +18,47 @@ button:hover,
   background: rgba(255, 255, 255, 0.3); /* تبقى أغمق عند المرور */
   color: #000;
 }
+/* خلفية الموقع */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("images/cave.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* شريط الهيدر */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+/* تنسيق الأزرار */
+.nav-btn {
+  background: #4da6ff;   /* أزرق فاتح */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* مؤثرات hover */
+.nav-btn:hover {
+  background: #3399ff;
+  transform: scale(1.05);
+}
+
+/* الروابط داخل الأزرار */
+.nav-btn a {
+  text-decoration: none;
+  color: white;
+}
