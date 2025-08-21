@@ -3,81 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <title>موقعي</title>
-  <!-- ربط ملف CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      color: white;
+      text-align: center;
+      background: url('images/cave.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    /* أيقونة + كتاب HTML */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 15px;
+      font-size: 24px; /* كبرت الخط */
+      font-weight: bold;
+      background: rgba(0,0,0,0.5);
+      padding: 8px 14px;
+      border-radius: 10px;
+    }
+    .logo img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* شريط الروابط */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      background: rgba(255,255,255,0.1);
+      padding: 8px 14px; /* صغرت */
+      border-radius: 8px;
+      color: white;
+      font-size: 14px; /* أصغر */
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* المحتوى */
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    img.book-cover {
+      width: 200px;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .summary {
+      font-size: 22px; /* خط أكبر */
+      font-weight: bold;
+      line-height: 1.8;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px; /* أصغر */
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px; /* أصغر */
+    }
+
+    .price {
+      font-size: 20px; /* خط أوضح */
+      margin: 20px 0;
+    }
+
+    /* أزرار الدفع */
+    .pay-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px; /* أصغر */
+      color: white;
+      font-size: 14px; /* أصغر */
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      max-width: 400px;
+      margin-inline: auto;
+    }
+    .pay-btn img {
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+    }
+
+    /* استجابة للشاشات الصغيرة */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-   <div class="group">
   <header>
-    <!-- زر باسم المستخدم -->
-  <button>
-    <!-- زر كتاب HTML -->
-    <button class="nav-btn">
-      <img src="icons/ai-icon.png" alt="شعار كتاب HTML" width="20" height="20">
+    <!-- أيقونة + كتاب HTML -->
+    <div class="logo">
+      <img src="icons/ai-icon.png" alt="شعار كتاب HTML">
       كتاب HTML
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="buy.html">شراء الكتاب</a>
+      <a href="article1.html">مقال</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
+
+    <p class="summary">
+      🚀 هل تبحث عن بداية قوية في عالم البرمجة؟  
+      هذا الكتاب هو دليلك الشامل لتعلم **HTML** بأسلوب بسيط وعملي.  
+      📘 مناسب للمبتدئين 100% مع أمثلة وتمارين.
+    </p>
+
+    <div class="video-section">
+      <h3 style="color: #f44336; font-size:22px;">🎥 فيديو تعريفي عن الكتاب</h3>
+      <video controls>
+        <source src="videos/book-preview.mp4" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+
+    <div class="price">
+      💰 السعر: 2 دولار (100 جنيه مصري)
+    </div>
+
+    <!-- روابط الشراء -->
+    <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn" style="background:#f44336;">شراء من Gumroad</a>
+    <a href="https://payhip.com/b/2cJWp" class="btn" style="background:orange;">شراء من Payhip</a>
+    <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn" style="background:#25D366;">شراء عبر واتساب</a>
+
+    <p style="font-size:18px; line-height:1.6;">
+      ✅ اختر وسيلة الدفع المناسبة  
+      ✅ قم بالدفع وأرسل صورة الإيصال على واتساب  
+      📩 سوف تستلم رابط التحميل فورًا 
+    </p>
+
+    <!-- أزرار الدفع -->
+    <button onclick="copyText('01066047545')" class="pay-btn" style="background:#e60000;">
+      <img src="icons/vodafone.png" alt="Vodafone Cash"> 01066047545 - فودافون كاش
     </button>
 
-    <!-- أزرار الروابط -->
-    <button class="nav-btn"><a href="index.html">الرئيسية</a></button>
-    <button class="nav-btn"><a href="article1.html">المقالات</a></button>
-    <button class="nav-btn"><a href="contact.html">تواصل معنا</a></button>
-  </header>
+    <button onclick="copyText('01285895096')" class="pay-btn" style="background:#ff6600;">
+      <img src="icons/orange.png" alt="Orange Cash"> 01285895096 - أورنج كاش
+    </button>
+
+    <button onclick="copyText('01558516081')" class="pay-btn" style="background:#5e0094;">
+      <img src="icons/we.png" alt="WE Cash"> 01558516081 - وي كاش
+    </button>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert("تم نسخ الرقم: " + text);
+    }
+  </script>
+
 </body>
 </html>
-
-
-
-  <img src="images/html-book-cover.png" alt="غلاف الكتاب" style="width: 200px; border-radius: 12px; margin: 20px 0; display: block;">
-
-  <p class="summary" style="font-size: 18px;">
-    هل تبحث عن بداية قوية في عالم البرمجة؟ هذا الكتاب هو دليلك الشامل لتعلم HTML بأسلوب بسيط وعملي، مع تطبيقات حقيقية وشرح باللغة العربية.
-  </p>
-<div class="video-section" style="margin-top: 30px;">
-    <h3 style="color: #f44336;"> فيديو تعريفي عن الكتاب</h3>
-    <video controls style="width: 100%; max-width: 600px; border-radius: 12px; margin-top: 10px;">
-      <source src="videos/book-preview.mp4" type="video/mp4">
-      المتصفح لا يدعم تشغيل الفيديو.
-    </video>
-</div>
-  <p class="description" style="color: #ccc;">
-    يشمل محتوى منسق، صور توضيحية، وتمارين عملية. مناسب للمبتدئين تمامًا.
-  </p>
-
-  <div class="price" style="font-weight: bold; margin: 15px 0;">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-  <div class="purchase-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-    <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn" style="background: #f44336; color: white; padding: 10px 16px; border-radius: 8px;">شراء من Gumroad</a>
-    <a href="https://payhip.com/b/2cJWp" class="btn" style="background: orange; color: white; padding: 10px 16px; border-radius: 8px;">شراء من Payhip</a>
-    <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn" style="background: #25D366; color: white; padding: 10px 16px; border-radius: 8px;">شراء عبر واتساب</a>
-
-  <p>
-    اختر وسيلة الدفع المناسبة
-     قم بالدفع وأرسل صورة الإيصال على واتساب
-      سوف تستلم رابط التحميل فورًا 
-  </p>
- 
-      
-        <button onclick="copyText('01066047545')" style="display: flex; align-items: center; background-color: #e60000; border: none; border-radius: 8px; padding: 10px 15px; color: white; font-weight: bold; cursor: pointer; width: 100%;">
-          <img src="../icons/vodafone.png" alt="Vodafone Cash" style="width:24px; height:24px; margin-left: 10px;">
-          01066047545 - فودافون كاش
-        </button>
-      
-        <button onclick="copyText('01285895096')" style="display: flex; align-items: center; background-color: #ff6600; border: none; border-radius: 8px; padding: 10px 15px; color: white; font-weight: bold; cursor: pointer; width: 100%;">
-          <img src="../icons/orange.png" alt="Orange Cash" style="width:24px; height:24px; margin-left: 10px;">
-          01285895096 - أورنج كاش
-        </button>
-     
-        <button onclick="copyText('01558516081')" style="display: flex; align-items: center; background-color: #5e0094; border: none; border-radius: 8px; padding: 10px 15px; color: white; font-weight: bold; cursor: pointer; width: 100%;">
-          <img src="../icons/we.png" alt="WE Cash" style="width:24px; height:24px; margin-left: 10px;">
-          01558516081 - وي كاش
-        </button>
-      
-
- 
-        
-  <script src="security.js"></script>
-
-
-</body>
-  </html>
