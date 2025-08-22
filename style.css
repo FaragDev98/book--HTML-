@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: url('images/cave.jpg') no-repeat center center fixed;
+  background: url('images/html-book-cover.png') no-repeat center center fixed;
   background-size: cover; /* تخلي الصورة تغطي الشاشة */
   color: white; /* تخلي النص أبيض عشان يبان */
 }button,
