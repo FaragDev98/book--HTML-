@@ -23,15 +23,20 @@
     </nav>
   </div>
 </header>
+  
+ <!-- ======= فيديو تعريفي ======= -->
+  <section class="video-section">
+    <video id="myVideo" poster="images/video-thumbnail.png">
+      <source src="videos/intro.mp4" type="video/mp4">
+      متصفحك لا يدعم عرض الفيديو
+    </video>
 
-  <!-- ======= خلفية الكتاب والفيديو ======= -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>📘 كتاب HTML للمبتدئين</h1>
-      <p>تعلم HTML من الصفر حتى الاحتراف بأسلوب بسيط وعملي مع أمثلة وتمارين تطبيقية.</p>
-        <source src="videos/book-preview.mp4" type="video/mp4">
-        المتصفح لا يدعم عرض الفيديو.
-      </video>
+    <div class="controls">
+      <button id="playPause">▶️</button>
+      <button id="mute">🔊</button>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+      <button id="fullscreen">⛶</button>
+    </div>
       <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
     </div>
 
