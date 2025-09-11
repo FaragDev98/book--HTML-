@@ -345,3 +345,28 @@ header.glass-header {
     padding: 12px 0;
   }
 }
+
+/* ======= تحسينات إضافية للنصوص والمربعات ======= */
+
+/* النصوص بخط عريض */
+p, li { 
+  font-weight: 600; 
+}
+
+/* المربعات الزجاجية للنصوص */
+.article-content, 
+.contact-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 
+    0 0 20px rgba(138, 43, 226, 0.4),  /* بنفسجي */
+    0 0 20px rgba(255, 255, 0, 0.4);   /* ليموني */
+}
+
+/* الخصوصية */
+.privacy {
+  font-weight: 700;
+  color: orange;
+}
