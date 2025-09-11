@@ -143,31 +143,31 @@ header.glass-header {
   }
 }
 
-
 /* ======= CSS خاص ب article1.html ======= */
-.article-page body {
+.article-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f0f4f8;
   margin: 0;
   padding: 0;
 }
 
 /* ======= رأس الصفحة ======= */
 .article-page header.glass-header {
-  background-color: #27ae60; /* أخضر زجاجي */
+  background-color: rgba(39, 174, 96, 0.9); /* أخضر زجاجي مركز */
   padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
 }
 
 .article-page .site-title-top {
   text-align: center;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: #ff9500; /* برتقالي واضح */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .article-page .header-container {
@@ -178,23 +178,25 @@ header.glass-header {
 }
 
 .article-page .logo img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .article-page .nav-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .article-page .nav-btn {
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 25px;
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -203,44 +205,47 @@ header.glass-header {
 .article-page .nav-btn.blue { background-color: #2980b9; }
 
 .article-page .nav-btn:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
+  opacity: 0.95;
+  transform: scale(1.08);
 }
 
 /* ======= محتوى المقال ======= */
 .article-page .article-content {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 25px;
-  background: rgba(39, 174, 96, 0.2); /* أخضر زجاجي */
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 30px;
+  background: rgba(39, 174, 96, 0.25); /* أخضر زجاجي فاتح */
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   color: #ff9500; /* نص برتقالي واضح */
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 19px;
+  line-height: 1.8;
 }
 
 .article-page .article-content h2 {
   color: #ff9500;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
 .article-page .article-content ul {
-  padding-left: 20px;
+  padding-left: 25px;
+  margin-bottom: 15px;
 }
 
 .article-page .article-content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* ======= فيديو بدل الصورة ======= */
 .article-page .article-content video {
   width: 100%;
-  max-height: 450px;
-  border-radius: 12px;
-  margin: 15px 0;
+  max-height: 480px;
+  border-radius: 15px;
+  margin: 20px 0;
   display: block;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
 
 /* ======= تجاوب مع الموبايل ======= */
@@ -252,19 +257,28 @@ header.glass-header {
 
   .article-page .nav-buttons {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     width: 100%;
     text-align: center;
   }
 
   .article-page .nav-btn {
-    width: 80%;
+    width: 85%;
     text-align: center;
+    font-size: 15px;
   }
 
   .article-page .article-content {
-    padding: 15px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  .article-page .article-content h2 {
+    font-size: 22px;
+  }
+
+  .article-page .article-content video {
+    max-height: 300px;
   }
 }
 
