@@ -25,6 +25,28 @@ header.glass-header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* ===== قسم الفيديو ===== */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.video-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.video-section video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 .site-title-top {
   text-align: center;
   font-size: 22px;
