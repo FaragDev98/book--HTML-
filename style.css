@@ -145,7 +145,7 @@ header.glass-header {
 
 
 /* ======= CSS خاص ب article1.html ======= */
-body.article-page {
+.article-page body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f2f2f2;
   margin: 0;
@@ -153,8 +153,8 @@ body.article-page {
 }
 
 /* ======= رأس الصفحة ======= */
-header.glass-header {
-  background-color: rgba(39, 174, 96, 0.8); /* أخضر زجاجي */
+.article-page header.glass-header {
+  background-color: #27ae60; /* أخضر زجاجي */
   padding: 15px 20px;
   position: sticky;
   top: 0;
@@ -162,7 +162,7 @@ header.glass-header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.site-title-top {
+.article-page .site-title-top {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -170,26 +170,26 @@ header.glass-header {
   margin-bottom: 5px;
 }
 
-.header-container {
+.article-page .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.logo img {
+.article-page .logo img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 
-.nav-buttons {
+.article-page .nav-buttons {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.nav-btn {
+.article-page .nav-btn {
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
@@ -198,17 +198,17 @@ header.glass-header {
   transition: 0.3s;
 }
 
-.nav-btn.red { background-color: #e74c3c; }
-.nav-btn.green { background-color: #27ae60; }
-.nav-btn.blue { background-color: #2980b9; }
+.article-page .nav-btn.red { background-color: #e74c3c; }
+.article-page .nav-btn.green { background-color: #27ae60; }
+.article-page .nav-btn.blue { background-color: #2980b9; }
 
-.nav-btn:hover {
+.article-page .nav-btn:hover {
   opacity: 0.9;
   transform: scale(1.05);
 }
 
 /* ======= محتوى المقال ======= */
-.article-content {
+.article-page .article-content {
   max-width: 900px;
   margin: 20px auto;
   padding: 25px;
@@ -220,22 +220,22 @@ header.glass-header {
   line-height: 1.7;
 }
 
-.article-content h2 {
+.article-page .article-content h2 {
   color: #ff9500;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.article-content ul {
+.article-page .article-content ul {
   padding-left: 20px;
 }
 
-.article-content li {
+.article-page .article-content li {
   margin-bottom: 8px;
 }
 
 /* ======= فيديو بدل الصورة ======= */
-.article-content video {
+.article-page .article-content video {
   width: 100%;
   max-height: 450px;
   border-radius: 12px;
@@ -245,24 +245,24 @@ header.glass-header {
 
 /* ======= تجاوب مع الموبايل ======= */
 @media screen and (max-width: 768px) {
-  .header-container {
+  .article-page .header-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .nav-buttons {
+  .article-page .nav-buttons {
     flex-direction: column;
     gap: 8px;
     width: 100%;
     text-align: center;
   }
 
-  .nav-btn {
+  .article-page .nav-btn {
     width: 80%;
     text-align: center;
   }
 
-  .article-content {
+  .article-page .article-content {
     padding: 15px;
     font-size: 16px;
   }
