@@ -12,6 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
     <a href="privacy-policy.html" style="color: #fff; text-decoration: underline;">سياسة الخصوصية</a> |
     <a href="protection.html" style="color: #fff; text-decoration: underline;">صفحة الحماية</a>
   `;
-  document.body.appendChild(footer);
-});// footer.js
-console.log("Footer script loaded successfully.");
+  
