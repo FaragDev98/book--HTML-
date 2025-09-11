@@ -281,49 +281,7 @@ header.glass-header {
   }
 }
 
-.buttons-column .buy-buttons li a,
-.buttons-column .pay-buttons li button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 30px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: 0.3s;
-}
 
-.buttons-column .buy-buttons li a.red { background:#f44336; }
-.buttons-column .buy-buttons li a.green { background:#4CAF50; }
-.buttons-column .buy-buttons li a.orange { background:orange; }
-.buttons-column .buy-buttons li a.whatsapp { background:#25D366; }
-
-.buttons-column .buy-buttons li a:hover,
-.buttons-column .pay-buttons li button:hover {
-  transform: scale(1.05);
-}
-
-/* أيقونات الدفع */
-.buttons-column .pay-buttons li button img {
-  width: 25px;
-  height: 25px;
-}
-
-/* تجاوب مع الموبايل */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .buttons-column .buy-buttons,
-  .buttons-column .pay-buttons {
-    width: 80%;
-  }
-}
 
 /* ============================ */
 /* ======= 2. CSS صفحة المقال (article1.html) ======= */
