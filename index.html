@@ -22,12 +22,14 @@
     </nav>
   </header>
 
-  <!-- ======= خلفية الكتاب والفيديو ======= -->
+  <!-- ======= بانر الكتاب ======= -->
   <section class="hero-section">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>📘 كتاب HTML للمبتدئين</h1>
       <p>تعلم HTML من الصفر حتى الاحتراف بأسلوب بسيط وعملي مع أمثلة وتمارين تطبيقية.</p>
-      <video controls poster="images/photo-1600443546015-f9b924a5b416.jpeg">
+
+      <video controls>
         <source src="videos/book-preview.mp4" type="video/mp4">
         المتصفح لا يدعم عرض الفيديو.
       </video>
@@ -58,7 +60,6 @@
     <script src="footer.js"></script>
   </footer>
 
-  <!-- ======= JavaScript ======= -->
   <script>
     function copyText(text) {
       navigator.clipboard.writeText(text);
