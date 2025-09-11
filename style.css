@@ -142,3 +142,77 @@ header.glass-header {
     max-width: 600px;
   }
 }
+/* ======= CSS خاص ب article1.html ======= */
+.article-page header.glass-header {
+  background-color: #2c3e50; /* لون واضح للرأس */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.article-page .site-title-top {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.article-page .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.article-page .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.article-page .nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.article-page .nav-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.article-page .nav-btn.red { background-color: #e74c3c; }
+.article-page .nav-btn.green { background-color: #27ae60; }
+.article-page .nav-btn.blue { background-color: #2980b9; }
+
+.article-page .nav-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* ======= تجاوب مع الموبايل ======= */
+@media screen and (max-width: 768px) {
+  .article-page .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-page .nav-buttons {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .article-page .nav-btn {
+    width: 80%;
+    text-align: center;
+  }
+}
