@@ -2,75 +2,63 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaragDev | كتاب HTML للمبتدئين</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-  
 <body>
-  <header>
-    
-  <nav class="nav-buttons">
-  <img src="icons/1000016680.jpg" alt="شعار AI" style="width:40px; height:40px; border-radius:50%;">
-      <a href="index.html">الرئيسية</a>
-      <a href="article1.html">المقالات</a>
-      <a href="contact.html">تواصل معنا</a>
+
+  <!-- ======= رأس الصفحة ======= -->
+  <header class="glass-header">
+    <div class="logo-title">
+      <img src="icons/1000016680.jpg" alt="شعار FaragDev" />
+      <span>FaragDev98</span>
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html" class="nav-btn">الرئيسية</a>
+      <a href="article1.html" class="nav-btn">المقالات</a>
+      <a href="contact.html" class="nav-btn">تواصل معنا</a>
     </nav>
-    </header>
+  </header>
 
-  
-  <div class="container">
-
-    <!-- العمود الأول: الفيديو -->
-    <div class="video-column">
-      <h3 style="color: #f44336;">🎥 فيديو تعريفي عن الكتاب</h3>
-      <video controls>
+  <!-- ======= خلفية الكتاب والفيديو ======= -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>📘 كتاب HTML للمبتدئين</h1>
+      <p>تعلم HTML من الصفر حتى الاحتراف بأسلوب بسيط وعملي مع أمثلة وتمارين تطبيقية.</p>
+      <video controls poster="images/photo-1600443546015-f9b924a5b416.jpeg">
         <source src="videos/book-preview.mp4" type="video/mp4">
-        المتصفح لا يدعم تشغيل الفيديو.
+        المتصفح لا يدعم عرض الفيديو.
       </video>
-
       <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
-
-      <p class="summary">
-        هل تبحث عن بداية قوية في عالم البرمجة؟  
-        هذا الكتاب هو دليلك الشامل لتعلم <strong>HTML</strong> بأسلوب بسيط وعملي.  
-        📘 مناسب للمبتدئين 100% مع أمثلة وتمارين.
-      </p>
     </div>
 
-    <!-- العمود الثاني: الأزرار -->
+    <!-- ======= أزرار الشراء ======= -->
     <div class="buttons-column">
-      <div class="price">
-        💰 السعر: 2 دولار (100 جنيه مصري)
-      </div>
-
-      <!-- روابط الشراء -->
-      <a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn" style="background:#f44336;">شراء من Gumroad</a>
-      <a href="https://payhip.com/b/2cJWp" class="btn" style="background:orange;">شراء من Payhip</a>
-      <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn" style="background:#25D366;">شراء عبر واتساب</a>
-
-      <p style="font-size:18px; line-height:1.6;">
-        ✅ اختر وسيلة الدفع المناسبة <br>
-        ✅ قم بالدفع وأرسل صورة الإيصال على واتساب <br>
-        📩 سوف تستلم رابط التحميل فورًا 
-      </p>
+      <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
+      <ul class="buy-buttons">
+        <li><a href="https://faragdev98.github.io/book--HTML-/" class="btn red">شراء كتاب</a></li>
+        <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green">Gumroad</a></li>
+        <li><a href="https://payhip.com/b/2cJWp" class="btn orange">Payhip</a></li>
+        <li><a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">واتساب</a></li>
+      </ul>
 
       <!-- أزرار الدفع -->
-      <button onclick="copyText('01066047545')" class="pay-btn" style="background:#e60000;">
-        <img src="icons/vodafone.png" alt="Vodafone Cash"> 01066047545 - فودافون كاش
-      </button>
-
-      <button onclick="copyText('01285895096')" class="pay-btn" style="background:#ff6600;">
-        <img src="icons/orange.png" alt="Orange Cash"> 01285895096 - أورنج كاش
-      </button>
-
-      <button onclick="copyText('01558516081')" class="pay-btn" style="background:#5e0094;">
-        <img src="icons/we.png" alt="WE Cash"> 01558516081 - وي كاش
-      </button>
+      <ul class="pay-buttons">
+        <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone Cash">01066047545 - فودافون كاش</button></li>
+        <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange Cash">01285895096 - أورنج كاش</button></li>
+        <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE Cash">01558516081 - وي كاش</button></li>
+      </ul>
     </div>
+  </section>
 
-  </div>
+  <!-- ======= Footer ======= -->
+  <footer id="main-footer">
+    <script src="footer.js"></script>
+  </footer>
 
+  <!-- ======= JavaScript ======= -->
   <script>
     function copyText(text) {
       navigator.clipboard.writeText(text);
