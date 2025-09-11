@@ -118,31 +118,112 @@ header.glass-header {
   margin-bottom: 15px;
 }
 
-/* ===== غلاف الكتاب ===== */
-.book-cover-container {
+/* ======= نبذة عن الكتاب ======= */
+.book-summary {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 900px;
+  color: white;
+  font-weight: 600; /* نص عريض */
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3), 0 0 20px rgba(255, 255, 0, 0.3);
+  line-height: 1.7;
+}
+
+/* ======= أزرار الشراء ======= */
+.buy-buttons {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.book-cover {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.buy-buttons li a {
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* أزرار الدفع والشراء */
-.buttons-column .buy-buttons,
-.buttons-column .pay-buttons {
-  list-style: none;
-  padding: 0;
+.buy-buttons li a.red { background: #f44336; }
+.buy-buttons li a.green { background: #4CAF50; }
+.buy-buttons li a.orange { background: orange; }
+
+.buy-buttons li a:hover {
+  transform: scale(1.05);
+}
+
+/* ======= مربع الدفع ======= */
+.payment-box {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  color: white;
+  font-weight: 600; /* نص عريض */
+}
+
+.payment-box p {
+  margin-bottom: 15px;
+}
+
+/* أزرار الأرقام وواتساب داخل المربع */
+.pay-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.pay-buttons li button,
+.pay-buttons li a {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pay-buttons li button:hover,
+.pay-buttons li a:hover {
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.25);
+}
+
+/* أيقونات الدفع */
+.pay-buttons li button img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ======= تجاوب مع الموبايل ======= */
+@media screen and (max-width: 768px) {
+  .buy-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pay-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .buttons-column .buy-buttons li a,
