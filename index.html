@@ -43,37 +43,42 @@
 <div class="book-cover-container">
   <img src="images/html-book-cover.png" alt="غلاف الكتاب" class="book-cover">
 </div>
-    <!-- ======= أزرار الشراء ======= -->
-    <div class="buttons-column">
-      <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
-      <ul class="buy-buttons">
-        <li><a href="https://faragdev98.github.io/book--HTML-/" class="btn red">شراء كتاب</a></li>
-        <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green">Gumroad</a></li>
-        <li><a href="https://payhip.com/b/2cJWp" class="btn orange">Payhip</a></li>
-        <li><a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">واتساب</a></li>
-      </ul>
 
-      <!-- أزرار الدفع -->
-      <ul class="pay-buttons">
-        <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone Cash">01066047545 - فودافون كاش</button></li>
-        <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange Cash">01285895096 - أورنج كاش</button></li>
-        <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE Cash">01558516081 - وي كاش</button></li>
-      </ul>
-    </div>
-  </section>
+<!-- نبذة عن الكتاب -->
+<section class="book-summary">
+  <h2>📖 نبذة عن كتاب HTML</h2>
+  <p>
+    هذا الكتاب هو دليلك الكامل لتعلم لغة HTML من الصفر إلى الاحتراف.  
+    ستتعلم كيفية بناء صفحات ويب متكاملة، التعامل مع النصوص، الصور، الروابط، القوائم، والفورمات.  
+    تعلمك هذا الكتاب سيمكنك من وضع الأساس القوي لتصميم مواقع جذابة وتفاعلية، ويعطيك الثقة لتبدأ رحلتك في تطوير الويب.  
+    كل مثال عملي مدعوم بشرح مفصل خطوة بخطوة، ليصبح التعلم ممتعًا وفعالًا.  
+    احصل على أساس متين، وتقدم بسرعة نحو CSS وJavaScript لبناء مواقع مذهلة!
+  </p>
+</section>
 
-  <!-- ======= Footer ======= -->
-  <footer id="main-footer">
-    <script src="footer.js"></script>
-  </footer>
+<!-- ======= أزرار الشراء ======= -->
+<div class="buttons-column">
+  <div class="price">💰 السعر: 2 دولار (100 جنيه مصري)</div>
 
-  <!-- ======= JavaScript ======= -->
-  <script>
-    function copyText(text) {
-      navigator.clipboard.writeText(text);
-      alert("تم نسخ الرقم: " + text);
-    }
-  </script>
+  <!-- أزرار الشراء الرئيسية -->
+  <ul class="buy-buttons">
+    <li><a href="https://faragdev98.github.io/book--HTML-/" class="btn red">شراء كتاب</a></li>
+    <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green">Gumroad</a></li>
+    <li><a href="https://payhip.com/b/2cJWp" class="btn orange">Payhip</a></li>
+  </ul>
 
+  <!-- ======= مربع الدفع عبر الأرقام + واتساب ======= -->
+  <div class="payment-box">
+    <p>📱 طريق الشراء من واتساب والأرقام التالية:</p>
+    <ul class="pay-buttons">
+      <li>
+        <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">واتساب</a>
+      </li>
+      <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone Cash">01066047545 - فودافون كاش</button></li>
+      <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange Cash">01285895096 - أورنج كاش</button></li>
+      <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE Cash">01558516081 - وي كاش</button></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
