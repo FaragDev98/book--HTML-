@@ -2,63 +2,116 @@ body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: url('images/photo-1600443546015-f9b924a5b416.jpeg') no-repeat center center fixed;
-  background-size: cover; /* تخلي الصورة تغطي الشاشة */
-  color: white; /* تخلي النص أبيض عشان يبان */
-}button,
-.buttons-container a {
-  background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
-  border: 2px solid #fff;
-  color: #fff;
-  backdrop-filter: blur(5px); /* يعطيها تأثير زجاج */
+  background-size: cover;
+  color: white;
+}
+
+/* ======= رأس الصفحة ======= */
+header.glass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+header .logo-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.nav-buttons a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.1);
   transition: 0.3s;
 }
-
-button:hover,
-.buttons-container a:hover {
-  background: rgba(255, 255, 255, 0.3); /* تبقى أغمق عند المرور */
-  color: #000;
-}
-/* خلفية الموقع */
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: url("images/html-book-cover.png") no-repeat center center fixed;
-  background-size: cover;
+.nav-buttons a:hover {
+  background: rgba(255,255,255,0.3);
+  color: black;
 }
 
-/* شريط الهيدر */
-header {
+/* ======= Hero Section ======= */
+.hero-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 15px;
+  padding: 30px 15px;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.hero-section video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.hero-section .book-cover {
+  width: 200px;
+  margin-bottom: 20px;
 }
 
-/* تنسيق الأزرار */
-.nav-btn {
-  background: #4da6ff;   /* أزرق فاتح */
-  color: white;
+/* ======= Buttons ======= */
+.buttons-column .buy-buttons,
+.buttons-column .pay-buttons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.buttons-column .buy-buttons li a,
+.buttons-column .pay-buttons li button {
+  padding: 12px 25px;
   border: none;
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-size: 15px;
+  border-radius: 30px;
+  color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
-  display: flex;
+  text-decoration: none;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
+  transition: 0.3s;
 }
+.buttons-column .buy-buttons li a.red { background:#f44336; }
+.buttons-column .buy-buttons li a.green { background:#4CAF50; }
+.buttons-column .buy-buttons li a.orange { background:orange; }
+.buttons-column .buy-buttons li a.whatsapp { background:#25D366; }
 
-/* مؤثرات hover */
-.nav-btn:hover {
-  background: #3399ff;
+.buttons-column .buy-buttons li a:hover,
+.buttons-column .pay-buttons li button:hover {
   transform: scale(1.05);
 }
 
-/* الروابط داخل الأزرار */
-.nav-btn a {
-  text-decoration: none;
-  color: white;
+/* ======= Pay Buttons Images ======= */
+.buttons-column .pay-buttons li button img {
+  width: 25px;
+  height: 25px;
 }
+
+/* ======= Responsive ======= */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+  .hero-section .hero-content {
+    max-width: 600px;
+  }
+    }
