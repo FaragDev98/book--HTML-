@@ -2,28 +2,32 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي</title>
-  <!-- ربط ملف CSS -->
+  <title>كتاب HTML | FaragDev98</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
 </head>
 <body>
 
-  <header>
-    <div class="logo-area">
-      <img src="icons/aiicon.png" alt="شعار FaragDev98" />
-      <h1>كتاب HTML</h1>
+  <!-- ======= رأس الصفحة ======= -->
+  <header class="glass-header">
+    <!-- اسم الموقع فوق الرأس -->
+    <div class="site-title-top">FaragDev98</div>
+
+    <div class="header-container">
+      <!-- أيقونة الشعار -->
+      <div class="logo">
+        <img src="icons/aiicon.png" alt="شعار FaragDev98" />
+      </div>
+
+      <!-- أزرار التنقل -->
+      <nav class="nav-buttons">
+        <a href="index.html" class="nav-btn red">الرئيسية</a>
+        <a href="article1.html" class="nav-btn green">المقالات</a>
+        <a href="contact.html" class="nav-btn blue">تواصل معنا</a>
+      </nav>
     </div>
   </header>
-   <header>
-    <div class="logo">
-      <a href="index.html">الرئيسية</a>
-      <a href="article1.html">المقالات</a>
-      <a href="contact.html">تواصل معنا</a>
-  </div>
-  </header>
 
+  <!-- صورة البانر -->
   <img
     src="images/html-book-cover.png"
     alt="HTML Banner"
@@ -76,6 +80,7 @@
       بعد إتقان HTML، يأتي دور CSS لجعل صفحاتك جذابة بصريًا، ثم JavaScript لإضفاء الحيوية والتفاعل. بهذا الثلاثي، تملك مفاتيح بناء مواقع عصرية وقوية.
     </p>
   </main>
+
   <script src="footer.js"></script>
 </body>
 </html>
