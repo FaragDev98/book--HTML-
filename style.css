@@ -291,7 +291,7 @@ header.glass-header {
 }
 
 /* صورة شخصية */
-.contact-page .about-me img {
+.contact-page .main-hero.png {
   width: 150px;
   height: 150px;
   border-radius: 50%;
