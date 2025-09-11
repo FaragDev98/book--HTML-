@@ -25,28 +25,6 @@ header.glass-header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* ===== قسم الفيديو ===== */
-.video-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 40px auto;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.video-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-.video-section video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
 .site-title-top {
   text-align: center;
   font-size: 22px;
@@ -109,18 +87,37 @@ header.glass-header {
   margin-bottom: 20px;
 }
 
-.hero-section video {
-  width: 100%;
-  max-width: 600px;
+/* ===== قسم الفيديو ===== */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.video-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.video-section video {
+  width: 80%;
+  max-width: 700px;
   border-radius: 12px;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
-
-.hero-section .book-cover {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
+.book-cover {
+  width: 100%;          /* تأخذ عرض الحاوية */
+  max-width: 400px;     /* أقصى عرض للصورة */
+  height: auto;         /* يحافظ على النسبة */
+  display: block;
+  margin: 0 auto;       /* تمركز الصورة أفقياً */
+  border-radius: 12px;  /* حواف دائرية خفيفة */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* ظل ناعم */
+  }
 /* أزرار الدفع والشراء */
 .buttons-column .buy-buttons,
 .buttons-column .pay-buttons {
