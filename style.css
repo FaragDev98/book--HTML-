@@ -255,42 +255,7 @@ header.glass-header {
   }
 }
 
-/* ======= تحسينات إضافية للنصوص ======= */
 
-/* النصوص بخط أوضح ولون برتقالي مريح */
-p, li {
-  font-weight: 600;
-  font-size: 18px;        /* حجم أوضح */
-  color: #ff7f32;         /* برتقالي مريح للعين */
-  line-height: 1.8;       /* مسافات بين السطور */
-}
-
-/* المربعات الزجاجية للنصوص (ناعمة ومريحة) */
-.article-content, 
-.contact-content {
-  background: rgba(255, 255, 255, 0.12); /* خفيف */
-  backdrop-filter: blur(12px);
-  border-radius: 18px;
-  padding: 25px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* ظل ناعم */
-}
-
-/* عناوين أو أقسام المقالات */
-.article-content h2,
-.contact-content h3 {
-  color: #8a2be2;       /* بنفسجي مميز */
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* الخصوصية */
-.privacy {
-  font-weight: 700;
-  font-size: 18px;
-  color: orange;
-  margin-top: 15px;
-}
 /* ============================ */
 /* ======= 3. CSS صفحة التواصل (contact.html) ======= */
 /* ============================ */
