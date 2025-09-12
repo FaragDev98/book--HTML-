@@ -1,7 +1,4 @@
-/* ============================ */
 /* CSS مخصص لصفحة index.html فقط */
-/* ============================ */
-
 /* ======= الجسم العام ======= */
 body {
   margin: 0;
@@ -20,47 +17,37 @@ header.glass-header {
   z-index: 999;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
 .site-title-top {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
-  color: #fff;
   margin-bottom: 5px;
 }
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 .nav-buttons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
-
-.nav-btn {
-  padding: 8px 18px;
-  border-radius: 20px;
-  text-decoration: none;
+.nav-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
   color: #fff;
-  font-weight: 500;
+  text-decoration: none;
   transition: 0.3s;
 }
-
-.nav-btn.red { background-color: #e74c3c; }
-.nav-btn.green { background-color: #27ae60; }
-.nav-btn.blue { background-color: #2980b9; }
-
-.nav-btn:hover {
-  opacity: 0.8;
+.nav-buttons a:hover {
+  color: #f1c40f;
   transform: scale(1.05);
 }
 
@@ -125,15 +112,58 @@ header.glass-header {
 .orange-box { background: rgba(255,165,0,0.3); }
 .purple-box { background: rgba(138,43,226,0.3); }
 
+/* ===== صندوق الدفع ===== */
+.payment-box {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 650px;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.payment-box h3 {
+  color: #ffcc70;
+  margin-bottom: 15px;
+}
+.buy-buttons, .pay-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+.buy-buttons a, .pay-buttons a, .pay-buttons button, .btn.copy-all {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.15);
+  transition: 0.3s;
+}
+.buy-buttons a.green { background: #27ae60; }
+.buy-buttons a.orange { background: #e67e22; }
+.pay-buttons a.whatsapp { background: #25D366; }
+.pay-buttons button img { width: 22px; height: 22px; }
+.buy-buttons a:hover, .pay-buttons a:hover, .pay-buttons button:hover, .btn.copy-all:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.25);
+}
+
 /* ===== تجاوب مع الموبايل ===== */
 @media screen and (max-width: 768px) {
-  .book-cover {
-    width: 200px;
-    height: 280px;
-  }
-  .glass-box {
-    padding: 15px;
-  }
+  .book-cover { width: 200px; height: 280px; }
+  .glass-box { padding: 15px; }
+  .buy-buttons, .pay-buttons { flex-direction: column; }
 }
 /* ============================ */
 /* ======= 2. CSS صفحة المقال (article1.html) ======= */
