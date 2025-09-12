@@ -165,11 +165,9 @@ header.glass-header {
   .glass-box { padding: 15px; }
   .buy-buttons, .pay-buttons { flex-direction: column; }
 }
-/* ============================ */
-/* ======= 2. CSS صفحة المقال (article1.html) ======= */
-/* ============================ */
 
-body.single-page {
+/* ===== CSS مخصص لصفحة article1.html فقط ===== */
+body.article-page {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: url("images/round.jpg") no-repeat center center fixed;
@@ -277,11 +275,8 @@ body.single-page {
 }
 
 
-/* ============================ */
-/* ======= 3. CSS صفحة التواصل (contact.html) ======= */
-/* ============================ */
-
-body.single-page {
+/* ===== CSS مخصص لصفحة contact.html فقط ===== */
+body.contact-page {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: url("images/background.jpg") no-repeat center center fixed;
