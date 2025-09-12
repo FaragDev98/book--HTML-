@@ -2,12 +2,24 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>تواصل معنا | FaragDev98</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="contact-page">
 
+  <header class="glass-header">
+  <div class="site-title-top">FaragDev98</div>
+  <div class="header-container">
+    <div class="logo">
+      <img src="icons/aiicon.png" alt="شعار FaragDev" />
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html"><i class="fa fa-home"></i> الرئيسية</a>
+      <a href="article1.html"><i class="fa fa-file-alt"></i> المقالات</a>
+      <a href="contact.html"><i class="fa fa-envelope"></i> تواصل معنا</a>
+    </nav>
+  </div>
+  </header>
   <!-- ======= محتوى التواصل ======= -->
   <div class="contact-content">
     <!-- عنوان الصفحة -->
@@ -23,6 +35,46 @@
       <a class="instagram" href="https://www.instagram.com" target="_blank">📸 إنستغرام</a>
     </div>
 
+     <!-- ======= طرق الشراء ======= -->
+  <div class="payment-box">
+    <h3>📱 طرق شراء الكتاب</h3>
+    <p>
+      السعر: <b>2 دولار (100 جنيه مصري)</b>  
+      يمكنك الدفع عبر البطاقات الدولية أو المحافظ الإلكترونية التالية:
+    </p>
+    <ul class="buy-buttons">
+      <li><a href="https://faragdev98.gumroad.com/l/htmlbook" class="btn green"><i class="fa fa-shopping-cart"></i> Gumroad</a></li>
+      <li><a href="https://payhip.com/b/2cJWp" class="btn orange"><i class="fa fa-credit-card"></i> Payhip</a></li>
+    </ul>
+    <hr>
+    <p>إذا لم يكن لديك فيزا أو بايبال، يمكنك الدفع عبر المحافظ المصرية أو واتساب:</p>
+    <ul class="pay-buttons">
+      <li>
+        <a href="https://wa.me/201066047545?text=مرحبًا، أريد شراء كتاب HTML" class="btn whatsapp">
+          <i class="fab fa-whatsapp"></i> واتساب
+        </a>
+      </li>
+      <li><button onclick="copyText('01066047545')"><img src="icons/vodafone.png" alt="Vodafone"> 01066047545 - فودافون كاش</button></li>
+      <li><button onclick="copyText('01285895096')"><img src="icons/orange.png" alt="Orange"> 01285895096 - أورنج كاش</button></li>
+      <li><button onclick="copyText('01558516081')"><img src="icons/we.png" alt="WE"> 01558516081 - وي كاش</button></li>
+    </ul>
+    <button class="btn copy-all" onclick="copyAllNumbers()"><i class="fa fa-copy"></i> نسخ كل الأرقام</button>
+  </div>
+
+</div>
+
+<!-- ======= JavaScript ======= -->
+<script>
+  function copyText(text) {
+    navigator.clipboard.writeText(text);
+    alert("تم نسخ الرقم: " + text);
+  }
+  function copyAllNumbers() {
+    const numbers = ["01066047545", "01285895096", "01558516081"];
+    navigator.clipboard.writeText(numbers.join(" | "));
+    alert("تم نسخ جميع الأرقام:\n" + numbers.join(" | "));
+  }
+</script>
     <!-- ======= نبذة عن فراج عبدالله ======= -->
     <div class="about-me">
       <h3>👤 من هو فراج عبدالله؟</h3>
