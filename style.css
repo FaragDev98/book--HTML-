@@ -278,7 +278,7 @@ header.glass-header {
 body.contact-page {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: url("images/background.jpg") no-repeat center center fixed;
+  background: url("images/round.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   line-height: 1.8;
@@ -428,22 +428,9 @@ body.contact-page {
   margin-top: 10px;
 }
 
-.contact-icons {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.contact-icons a {
-  font-size: 24px;
-  color: #fff;
-  transition: 0.3s;
-}
-
-.contact-icons a:hover {
-  color: #ffcc00;
-  transform: scale(1.2);
+.book-cover-container {
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* تجاوب مع الموبايل */
