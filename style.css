@@ -167,32 +167,28 @@ header.glass-header {
 }
 
 /* ===== CSS مخصص لصفحة article1.html فقط ===== */
+
+/* ===== خلفية خاصة بصفحة المقال ===== */
 body.article-page {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: url("images/round.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  color: #fff;
   line-height: 1.8;
 }
 
-.article-page {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
+/* ===== رأس الصفحة ===== */
 .article-page .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 }
 
 .article-page .nav-buttons {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
 .article-page .nav-btn {
@@ -201,40 +197,35 @@ body.article-page {
   padding: 8px 15px;
   border-radius: 8px;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
-
-.article-page .nav-btn.red { background-color: #e74c3c; }
+.article-page .nav-btn.red   { background-color: #e74c3c; }
 .article-page .nav-btn.green { background-color: #27ae60; }
-.article-page .nav-btn.blue { background-color: #2980b9; }
+.article-page .nav-btn.blue  { background-color: #2980b9; }
 
-.article-page .nav-btn:hover {
-  opacity: 0.8;
-}
+.article-page .nav-btn:hover { opacity: 0.8; }
 
+/* ===== محتوى المقال ===== */
 .article-page .article-content {
   max-width: 900px;
   margin: 40px auto;
   padding: 25px;
-  line-height: 1.7;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
 }
 
 .article-page .article-content h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.article-page .article-content p {
-  padding-left: 25px;
-  margin-bottom: 15px;
-}
-
-.article-page .article-content ul {
-  padding-left: 25px;
-  margin-bottom: 15px;
-}
-
-.article-page .article-content li {
+  margin-top: 25px;
   margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.article-page .article-content p,
+.article-page .article-content li {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 
 .article-page .article-content video {
@@ -243,14 +234,19 @@ body.article-page {
   border-radius: 15px;
   margin: 20px 0;
   display: block;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
 }
 
-/* تجاوب مع الموبايل */
+/* ===== تجاوب مع الموبايل ===== */
 @media (max-width: 768px) {
-  .article-page .header-container,
+  .article-page .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .article-page .nav-buttons {
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 
@@ -270,10 +266,11 @@ body.article-page {
   }
 
   .article-page .article-content video {
-    max-height: 300px;
+    max-height: 280px;
   }
 }
 
+ 
 
 /* ===== CSS مخصص لصفحة contact.html فقط ===== */
 body.contact-page {
