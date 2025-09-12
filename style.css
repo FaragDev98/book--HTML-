@@ -88,6 +88,7 @@ header.glass-header {
 }
 
 /* ===== قسم الفيديو ===== */
+
 .video-section {
   display: flex;
   flex-direction: column;
@@ -96,7 +97,7 @@ header.glass-header {
   text-align: center;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.12);  /* مربع زجاجي خفيف */
+  background: rgba(255,255,255,0.12);
   backdrop-filter: blur(12px);
   border-radius: 18px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
@@ -105,22 +106,10 @@ header.glass-header {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-.video-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.video-section video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  margin-bottom: 15px;
-}
-
+.video-section.show { opacity:1; transform:translateY(0); }
 
 .book-summary {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255,255,255,0.12);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 25px;
@@ -128,159 +117,30 @@ header.glass-header {
   max-width: 900px;
   color: white;
   font-weight: 600;
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3), 0 0 20px rgba(255, 255, 0, 0.3);
   line-height: 1.7;
+  box-shadow: 0 0 20px rgba(138,43,226,0.3), 0 0 20px rgba(255,255,0,0.3);
 }
 
-.book-summary .book-cover-container {
-  text-align: center;
-  margin: 15px 0;
-}
+.book-cover { max-width: 400px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2); }
 
-.book-cover {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* ======= مربعات استخدام الكتاب ======= */
-.usage-box {
-  background: rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 15px 0;
-  font-weight: 700;
-  color: white;
-  line-height: 1.6;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.orange-box { background-color: rgba(255,165,0,0.4); }
+.usage-box { border-radius:12px; padding:20px; margin:15px 0; font-weight:700; line-height:1.6; color:white; box-shadow:0 0 15px rgba(0,0,0,0.2);}
+.orange-box { background-color: rgba(255,165,0,0.4);}
 .purple-box { background-color: rgba(138,43,226,0.4); }
 
-/* ======= أزرار الشراء ======= */
-.buy-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px 0;
-}
+.buy-buttons { display:flex; justify-content:center; gap:15px; margin:20px 0; }
+.buy-buttons li a { padding:12px 25px; border-radius:25px; color:white; font-weight:700; text-decoration:none; transition:0.3s; }
+.buy-buttons li a.green { background:#4CAF50; }
+.buy-buttons li a.orange { background:orange; }
 
-.buy-buttons li a {
-  padding: 12px 25px;
-  border-radius: 25px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.3s;
-}
+.payment-box { background: rgba(255,255,255,0.12); backdrop-filter: blur(12px); border-radius:15px; padding:20px; margin:20px auto; max-width:600px; box-shadow:0 4px 15px rgba(0,0,0,0.2); font-weight:700; color:white; text-align:center; }
+.pay-buttons { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; list-style:none; padding:0; }
+.pay-buttons li button, .pay-buttons li a { display:flex; align-items:center; justify-content:center; gap:10px; background: rgba(255,255,255,0.15); border:2px solid #fff; border-radius:25px; padding:10px 15px; color:white; font-weight:700; cursor:pointer; text-decoration:none; transition:0.3s;}
+.pay-buttons li button:hover, .pay-buttons li a:hover { transform:scale(1.03); background: rgba(255,255,255,0.25);}
+.pay-buttons li button img { width:25px; height:25px; }
 
-.buy-buttons li a.green { background: #4CAF50; }
-.buy-buttons li a.orange { background: orange; }
-
-/* ======= مربع شراء واتساب ======= */
-.payment-box {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  font-weight: 700;
-  color: white;
-  text-align: center;
-}
-
-.pay-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-}
-
-.pay-buttons li button,
-.pay-buttons li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.15);
-  border: 2px solid #fff;
-  border-radius: 25px;
-  padding: 10px 15px;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.pay-buttons li button:hover,
-.pay-buttons li a:hover {
-  transform: scale(1.03);
-  background: rgba(255,255,255,0.25);
-}
-
-.pay-buttons li button img {
-  width: 25px;
-  height: 25px;
-}
-
-/* ======= تجاوب مع الموبايل ======= */
-@media screen and (max-width: 768px) {
-  .buy-buttons, .pay-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.pay-buttons li button,
-.pay-buttons li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.15);
-  border: 2px solid #fff;
-  border-radius: 25px;
-  padding: 10px;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.pay-buttons li button:hover,
-.pay-buttons li a:hover {
-  transform: scale(1.03);
-  background: rgba(255,255,255,0.25);
-}
-
-/* أيقونات الدفع */
-.pay-buttons li button img {
-  width: 25px;
-  height: 25px;
-}
-
-/* ======= تجاوب مع الموبايل ======= */
-@media screen and (max-width: 768px) {
-  .buy-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pay-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
+@media screen and (max-width:768px) {
+  .buy-buttons, .pay-buttons { flex-direction:column; align-items:center; gap:10px; }
+                                     }
 
 
 /* ============================ */
