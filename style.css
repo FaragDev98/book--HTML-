@@ -188,6 +188,24 @@ header.glass-header {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* ===== قسم الفيديو ===== */
+.video-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.video-section video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
 .article-page .nav-buttons {
   display: flex;
   gap: 12px;
